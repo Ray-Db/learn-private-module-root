@@ -2,8 +2,8 @@ provider "aws" {
   region = var.region
 }
 
-module "module-aws-s3" {
-  source      = "app.terraform.io/raycomp/module-aws-s3/aws"
+module "s3-webapp" {
+  source      = "app.terraform.io/raycomp/s3-webapp/aws"
   name        = var.name
   region      = var.region
   prefix      = var.prefix
