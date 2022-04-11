@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "module-aws-s3" {
-  source      = "app.terraform.io/raycomp/module-aws-s3/private"
+  source      = "app.terraform.io/raycomp/module-aws-s3/aws"
   name        = var.name
   region      = var.region
   prefix      = var.prefix
